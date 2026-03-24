@@ -589,51 +589,50 @@
      <h2 class="section-title">More Case Studies</h2>
      <p class="section-subtitle">Additional projects showcasing my approach to solving complex technical challenges.</p>
 
-     <div class="grid md:grid-cols-2 gap-12 mt-16">
-      <!-- SACCO Churn Analytics -->
-      <div class="section-card group relative overflow-hidden min-h-[500px] flex flex-col hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 border-l-4 border-blue-500/50 p-8">
-       <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center gap-3">
-         <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+     <!-- Unified responsive grid: 2 columns on desktop, 1 on mobile, equal heights -->
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 auto-rows-fr">
+      <!-- SACCO Churn Analytics - Unified Card Structure -->
+      <div class="section-card group relative overflow-hidden flex flex-col border-l-4 border-blue-500/50 p-8 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
+       <!-- Header Section -->
+       <div class="mb-6">
+        <div class="flex items-center gap-3 mb-3">
+         <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
            <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
           </svg>
          </div>
-         <div>
-          <h3 class="text-3xl font-black text-white mb-2">SACCO Churn Analytics</h3>
-          <p class="text-sm text-white/50">Predictive modeling for member retention</p>
+         <div class="flex-1">
+          <h3 class="text-3xl font-black text-white">SACCO Churn Analytics</h3>
+          <p class="text-sm text-white/50 mt-1">Predictive modeling for member retention</p>
          </div>
         </div>
-        <div class="flex gap-2">
-         <span class="px-2 py-1 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Solo Project</span>
-         <span class="px-2 py-1 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Production-ready</span>
+        <div class="flex gap-2 flex-wrap">
+         <span class="px-3 py-1 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Solo Project</span>
+         <span class="px-3 py-1 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Production-ready</span>
         </div>
        </div>
 
+       <!-- Hero insight -->
        <div class="text-lg font-bold text-blue-400 mb-6">Reduced churn by 18% using XGBoost predictive targeting</div>
 
-       <div class="grid grid-cols-2 gap-5 mb-6">
+       <!-- Metric cards - consistent sizing -->
+       <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-blue-500/30 shadow-lg shadow-blue-500/10">
-         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">CHURN REDUCTION</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">📉</span>
-          <span class="text-3xl font-black text-blue-400">18%</span>
-         </div>
+         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">Churn Reduction</div>
+         <div class="text-3xl font-black text-blue-400 mb-1">18%</div>
          <div class="text-xs text-white/70">Over 6 months</div>
         </div>
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-green-500/30 shadow-lg shadow-green-500/10">
-         <div class="text-xs font-bold text-green-400 uppercase tracking-wider mb-2">MODEL PERFORMANCE</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">🎯</span>
-          <span class="text-3xl font-black text-green-400">82%</span>
-         </div>
+         <div class="text-xs font-bold text-green-400 uppercase tracking-wider mb-2">Model Performance</div>
+         <div class="text-3xl font-black text-green-400 mb-1">82%</div>
          <div class="text-xs text-white/70">ROC-AUC score</div>
         </div>
        </div>
 
-       <div class="mb-8">
+       <!-- Tech stack - standard section -->
+       <div class="mb-8 pb-8 border-b border-white/10">
         <div class="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-3">Tech Stack</div>
-        <div class="flex flex-wrap gap-2 mb-2">
+        <div class="flex flex-wrap gap-2 mb-3">
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Python</span>
          <span class="px-3 py-1.5 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">XGBoost</span>
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Scikit-learn</span>
@@ -641,14 +640,18 @@
         <div class="text-xs text-white/50">Streamlit • PostgreSQL • SMOTE</div>
        </div>
 
-       <div class="flex gap-3 mt-8">
-        <a href="https://github.com/neviltorio/sacco-churn-analytics" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50">
+       <!-- Flex spacer to push buttons to bottom -->
+       <div class="flex-grow"></div>
+
+       <!-- Action buttons - always at bottom -->
+       <div class="flex gap-3 mb-6">
+        <a href="https://github.com/neviltorio/sacco-churn-analytics" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
          </svg>
          GitHub
         </a>
-        <a href="https://sacco-churn-demo.streamlit.app" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-green-500/40">
+        <a href="https://sacco-churn-demo.streamlit.app" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-green-500/40 focus:outline-none focus:ring-2 focus:ring-green-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
           <polyline points="15,3 21,3 21,9"/>
@@ -658,67 +661,65 @@
         </a>
        </div>
 
-       <!-- Expandable details -->
-       <div class="mt-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <!-- Expandable details on hover -->
+       <div class="space-y-2 pt-4 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">🏢</span>
-         <span>Used by SACCO managers for proactive member retention</span>
+         <span>SACCO managers use for proactive retention</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">👤</span>
-         <span>Lead Data Scientist - End-to-end ML pipeline</span>
+         <span>Lead Data Scientist - End-to-end ML</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">⚙️</span>
-         <span>Handled class imbalance using SMOTE + ensemble models</span>
+         <span>SMOTE + ensemble handling class imbalance</span>
         </div>
        </div>
       </div>
 
-      <!-- IT Support Automation -->
-      <div class="section-card group relative overflow-hidden min-h-[500px] flex flex-col hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 border-l-4 border-green-500/50 p-8">
-       <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center gap-3">
-         <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
+<!-- IT Support Automation - Unified Card Structure -->
+      <div class="section-card group relative overflow-hidden flex flex-col border-l-4 border-green-500/50 p-8 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20">
+       <!-- Header Section -->
+       <div class="mb-6">
+        <div class="flex items-center gap-3 mb-3">
+         <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-         </svg>
-        </div>
-         <div>
-          <h3 class="text-3xl font-black text-white mb-2">IT Support Automation</h3>
-          <p class="text-sm text-white/50">Operational efficiency platform</p>
+          </svg>
+         </div>
+         <div class="flex-1">
+          <h3 class="text-3xl font-black text-white">IT Support Automation</h3>
+          <p class="text-sm text-white/50 mt-1">Operational efficiency platform</p>
          </div>
         </div>
-        <div class="flex gap-2">
-         <span class="px-2 py-1 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Team Project</span>
-         <span class="px-2 py-1 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">10k+ tickets/month</span>
+        <div class="flex gap-2 flex-wrap">
+         <span class="px-3 py-1 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Team Project</span>
+         <span class="px-3 py-1 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">10k+ tickets/month</span>
         </div>
        </div>
 
+       <!-- Hero insight -->
        <div class="text-lg font-bold text-green-400 mb-6">35% faster resolution through intelligent ticket routing</div>
 
-       <div class="grid grid-cols-2 gap-5 mb-6">
+       <!-- Metric cards - consistent sizing -->
+       <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-blue-500/30 shadow-lg shadow-blue-500/10">
-         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">RESOLUTION TIME</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">⏱️</span>
-          <span class="text-3xl font-black text-blue-400">35%</span>
-         </div>
-         <div class="text-xs text-white/70">From 4.2h → 2.7h average</div>
+         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">Resolution Time</div>
+         <div class="text-3xl font-black text-blue-400 mb-1">35%</div>
+         <div class="text-xs text-white/70">From 4.2h → 2.7h</div>
         </div>
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-green-500/30 shadow-lg shadow-green-500/10">
-         <div class="text-xs font-bold text-green-400 uppercase tracking-wider mb-2">SLA COMPLIANCE</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">📈</span>
-          <span class="text-3xl font-black text-green-400">20%</span>
-         </div>
+         <div class="text-xs font-bold text-green-400 uppercase tracking-wider mb-2">SLA Compliance</div>
+         <div class="text-3xl font-black text-green-400 mb-1">20%</div>
          <div class="text-xs text-white/70">Higher over 8 months</div>
         </div>
        </div>
 
-       <div class="mb-8">
+       <!-- Tech stack - standard section -->
+       <div class="mb-8 pb-8 border-b border-white/10">
         <div class="text-xs font-semibold text-green-400 uppercase tracking-wider mb-3">Tech Stack</div>
-        <div class="flex flex-wrap gap-2 mb-2">
+        <div class="flex flex-wrap gap-2 mb-3">
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Python</span>
          <span class="px-3 py-1.5 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Power BI</span>
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Azure</span>
@@ -726,14 +727,18 @@
         <div class="text-xs text-white/50">REST APIs • ML Routing • Real-time Dashboards</div>
        </div>
 
-       <div class="flex gap-3 mt-8">
-        <a href="https://github.com/neviltorio/it-support-automation" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50">
+       <!-- Flex spacer to push buttons to bottom -->
+       <div class="flex-grow"></div>
+
+       <!-- Action buttons - always at bottom -->
+       <div class="flex gap-3 mb-6">
+        <a href="https://github.com/neviltorio/it-support-automation" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
          </svg>
          GitHub
         </a>
-        <a href="https://it-support-dashboard.powerbi.com" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-green-500/40">
+        <a href="https://it-support-dashboard.powerbi.com" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-green-500/40 focus:outline-none focus:ring-2 focus:ring-green-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
           <polyline points="15,3 21,3 21,9"/>
@@ -743,109 +748,65 @@
         </a>
        </div>
 
-       <!-- Expandable details -->
-       <div class="mt-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <!-- Expandable details on hover -->
+       <div class="space-y-2 pt-4 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">🏢</span>
-         <span>Supports IT teams handling 10k+ monthly tickets</span>
+         <span>IT teams handle 10k+ monthly tickets</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">👤</span>
-         <span>Full-stack Developer - Led backend automation</span>
+         <span>Full-stack Developer - Backend automation</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">⚙️</span>
-         <span>Rule-based + ML hybrid routing system</span>
-        </div>
-       </div>
-      </div>
-        <div class="text-xs font-semibold text-green-400 uppercase tracking-wider mb-3">Tech Stack</div>
-        <div class="flex flex-wrap gap-2 mb-2">
-         <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Python</span>
-         <span class="px-3 py-1.5 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Power BI</span>
-         <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Azure</span>
-        </div>
-        <div class="text-xs text-white/50">REST APIs • ML Routing • Real-time Dashboards</div>
-       </div>
-
-       <div class="flex gap-3 mt-auto">
-        <a href="https://github.com/neviltorio/it-support-automation" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50">
-         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-         </svg>
-         GitHub
-        </a>
-        <a href="https://it-support-dashboard.powerbi.com" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-green-500/25 hover:shadow-green-500/40">
-         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-          <polyline points="15,3 21,3 21,9"/>
-          <line x1="10" y1="14" x2="21" y2="3"/>
-         </svg>
-         Live Dashboard
-        </a>
-       </div>
-
-       <!-- Expandable details -->
-       <div class="mt-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <div class="flex items-center gap-2 text-sm text-white/70">
-         <span class="text-lg">🏢</span>
-         <span>Supports IT teams handling 10k+ monthly tickets</span>
-        </div>
-        <div class="flex items-center gap-2 text-sm text-white/70">
-         <span class="text-lg">👤</span>
-         <span>Full-stack Developer - Led backend automation</span>
-        </div>
-        <div class="flex items-center gap-2 text-sm text-white/70">
-         <span class="text-lg">⚙️</span>
-         <span>Rule-based + ML hybrid routing system</span>
+         <span>Rule-based + ML hybrid routing</span>
         </div>
        </div>
       </div>
 
-      <!-- Healthcare Data Pipeline -->
-      <div class="section-card group relative overflow-hidden min-h-[500px] flex flex-col hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/20 border-l-4 border-teal-500/50 p-8">
-       <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center gap-3">
-         <div class="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center">
+      <!-- Healthcare Data Pipeline - Unified Card Structure -->
+      <div class="section-card group relative overflow-hidden flex flex-col border-l-4 border-teal-500/50 p-8 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/20">
+       <!-- Header Section -->
+       <div class="mb-6">
+        <div class="flex items-center gap-3 mb-3">
+         <div class="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
           </svg>
          </div>
-         <div>
-          <h3 class="text-3xl font-black text-white mb-2">Healthcare Data Pipeline</h3>
-          <p class="text-sm text-white/50">Patient analytics and operational insights</p>
+         <div class="flex-1">
+          <h3 class="text-3xl font-black text-white">Healthcare Data Pipeline</h3>
+          <p class="text-sm text-white/50 mt-1">Patient analytics and operational insights</p>
          </div>
         </div>
-        <div class="flex gap-2">
-         <span class="px-2 py-1 bg-teal-500/15 text-teal-400 text-xs rounded-full font-medium border border-teal-500/30">Team Project</span>
-         <span class="px-2 py-1 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">500K+ records/day</span>
+        <div class="flex gap-2 flex-wrap">
+         <span class="px-3 py-1 bg-teal-500/15 text-teal-400 text-xs rounded-full font-medium border border-teal-500/30">Team Project</span>
+         <span class="px-3 py-1 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">500K+ records/day</span>
         </div>
        </div>
 
+       <!-- Hero insight -->
        <div class="text-lg font-bold text-teal-400 mb-6">15% faster ETL processing with distributed Spark pipeline</div>
 
-       <div class="grid grid-cols-2 gap-5 mb-6">
+       <!-- Metric cards - consistent sizing -->
+       <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-blue-500/30 shadow-lg shadow-blue-500/10">
-         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">PROCESSING SPEED</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">⚡</span>
-          <span class="text-3xl font-black text-blue-400">15%</span>
-         </div>
+         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">Processing Speed</div>
+         <div class="text-3xl font-black text-blue-400 mb-1">15%</div>
          <div class="text-xs text-white/70">From 4h → 3.4h daily ETL</div>
         </div>
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-teal-500/30 shadow-lg shadow-teal-500/10">
-         <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-2">DATA SCALE</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">📊</span>
-          <span class="text-3xl font-black text-teal-400">500K+</span>
-         </div>
+         <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-2">Data Scale</div>
+         <div class="text-3xl font-black text-teal-400 mb-1">500K+</div>
          <div class="text-xs text-white/70">Patient records daily</div>
         </div>
        </div>
 
-       <div class="mb-8">
+       <!-- Tech stack - standard section -->
+       <div class="mb-8 pb-8 border-b border-white/10">
         <div class="text-xs font-semibold text-teal-400 uppercase tracking-wider mb-3">Tech Stack</div>
-        <div class="flex flex-wrap gap-2 mb-2">
+        <div class="flex flex-wrap gap-2 mb-3">
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Apache Spark</span>
          <span class="px-3 py-1.5 bg-teal-500/15 text-teal-400 text-xs rounded-full font-medium border border-teal-500/30">Python</span>
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">AWS</span>
@@ -853,84 +814,86 @@
         <div class="text-xs text-white/50">Streaming ETL • Batch Processing • Tableau</div>
        </div>
 
-       <div class="flex gap-3 mt-8">
-        <a href="https://github.com/neviltorio/healthcare-etl-pipeline" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50">
+       <!-- Flex spacer to push buttons to bottom -->
+       <div class="flex-grow"></div>
+
+       <!-- Action buttons - always at bottom -->
+       <div class="flex gap-3 mb-6">
+        <a href="https://github.com/neviltorio/healthcare-etl-pipeline" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
          </svg>
          GitHub
         </a>
-        <a href="https://healthcare-analytics-demo.tableau.com" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40">
+        <a href="https://healthcare-analytics.tableau.com" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40 focus:outline-none focus:ring-2 focus:ring-teal-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-          <line x1="9" y1="9" x2="15" y2="15"/>
-          <line x1="15" y1="9" x2="9" y2="15"/>
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15,3 21,3 21,9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
          </svg>
-         Architecture
+         Live Dashboard
         </a>
        </div>
 
-       <!-- Expandable details -->
-       <div class="mt-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <!-- Expandable details on hover -->
+       <div class="space-y-2 pt-4 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div class="flex items-center gap-2 text-sm text-white/70">
-         <span class="text-lg">🏢</span>
-         <span>Healthcare providers analyze patient outcomes</span>
+         <span class="text-lg">🏥</span>
+         <span>Processes 500K+ patient records daily</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
          <span class="text-lg">👤</span>
-         <span>Data Engineer - Built distributed ETL pipeline</span>
+         <span>Full-stack Developer - Data architecture lead</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
-         <span class="text-lg">⚙️</span>
-         <span>Spark handling streaming + batch data at scale</span>
+         <span class="text-lg">📊</span>
+         <span>Distributed Spark cluster with auto-scaling</span>
         </div>
        </div>
       </div>
 
-      <!-- Blockchain Supply Chain -->
-      <div class="section-card group relative overflow-hidden min-h-[500px] flex flex-col hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20 border-l-4 border-purple-500/50 p-8">
-       <div class="flex items-center justify-between mb-2">
-        <div class="flex items-center gap-3">
-         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+      <!-- Blockchain Supply Chain - Unified Card Structure -->
+      <div class="section-card group relative overflow-hidden flex flex-col border-l-4 border-purple-500/50 p-8 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20">
+       <!-- Header Section -->
+       <div class="mb-6">
+        <div class="flex items-center gap-3 mb-3">
+         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-         </svg>
-        </div>
-         <div>
-          <h3 class="text-3xl font-black text-white mb-2">Blockchain Supply Chain</h3>
-          <p class="text-sm text-white/50">Transparent agricultural traceability</p>
+          </svg>
+         </div>
+         <div class="flex-1">
+          <h3 class="text-3xl font-black text-white">Blockchain Supply Chain</h3>
+          <p class="text-sm text-white/50 mt-1">Transparent agricultural traceability</p>
          </div>
         </div>
-        <div class="flex gap-2">
-         <span class="px-2 py-1 bg-purple-500/15 text-purple-400 text-xs rounded-full font-medium border border-purple-500/30">Solo Project</span>
-         <span class="px-2 py-1 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Production-ready</span>
+        <div class="flex gap-2 flex-wrap">
+         <span class="px-3 py-1 bg-purple-500/15 text-purple-400 text-xs rounded-full font-medium border border-purple-500/30">Solo Project</span>
+         <span class="px-3 py-1 bg-green-500/15 text-green-400 text-xs rounded-full font-medium border border-green-500/30">Production-ready</span>
         </div>
        </div>
 
+       <!-- Hero insight -->
        <div class="text-lg font-bold text-purple-400 mb-6">100% immutable traceability with gas-optimized smart contracts</div>
 
-       <div class="grid grid-cols-2 gap-5 mb-6">
+       <!-- Metric cards - consistent sizing -->
+       <div class="grid grid-cols-2 gap-4 mb-6">
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-blue-500/30 shadow-lg shadow-blue-500/10">
-         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">TRACEABILITY</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">🔒</span>
-          <span class="text-3xl font-black text-blue-400">100%</span>
-         </div>
+         <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">Traceability</div>
+         <div class="text-3xl font-black text-blue-400 mb-1">100%</div>
          <div class="text-xs text-white/70">Immutable verification</div>
         </div>
         <div class="text-center bg-surface/40 rounded-xl p-4 border border-purple-500/30 shadow-lg shadow-purple-500/10">
-         <div class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-2">COST REDUCTION</div>
-         <div class="flex items-center justify-center gap-2 mb-1">
-          <span class="text-2xl">💰</span>
-          <span class="text-3xl font-black text-purple-400">25%</span>
-         </div>
+         <div class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-2">Cost Reduction</div>
+         <div class="text-3xl font-black text-purple-400 mb-1">25%</div>
          <div class="text-xs text-white/70">Through automation</div>
         </div>
        </div>
 
-       <div class="mb-8">
+       <!-- Tech stack - standard section -->
+       <div class="mb-8 pb-8 border-b border-white/10">
         <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-3">Tech Stack</div>
-        <div class="flex flex-wrap gap-2 mb-2">
+        <div class="flex flex-wrap gap-2 mb-3">
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">Solidity</span>
          <span class="px-3 py-1.5 bg-purple-500/15 text-purple-400 text-xs rounded-full font-medium border border-purple-500/30">Ethereum</span>
          <span class="px-3 py-1.5 bg-blue-500/15 text-blue-400 text-xs rounded-full font-medium border border-blue-500/30">React</span>
@@ -938,14 +901,18 @@
         <div class="text-xs text-white/50">Smart Contracts • IPFS • Web3.js</div>
        </div>
 
-       <div class="flex gap-3 mt-8">
-        <a href="https://github.com/neviltorio/blockchain-supply-chain" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50">
+       <!-- Flex spacer to push buttons to bottom -->
+       <div class="flex-grow"></div>
+
+       <!-- Action buttons - always at bottom -->
+       <div class="flex gap-3 mb-6">
+        <a href="https://github.com/neviltorio/blockchain-supply-chain" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 hover:text-white rounded-lg text-sm font-medium transition-all duration-300 border border-blue-500/30 hover:border-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
          </svg>
          GitHub
         </a>
-        <a href="https://supply-chain-demo.vercel.app" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40">
+        <a href="https://supply-chain-demo.vercel.app" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 focus:outline-none focus:ring-2 focus:ring-purple-500/50">
          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
           <polyline points="15,3 21,3 21,9"/>
@@ -955,10 +922,10 @@
         </a>
        </div>
 
-       <!-- Expandable details -->
-       <div class="mt-4 space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <!-- Expandable details on hover -->
+       <div class="space-y-2 pt-4 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div class="flex items-center gap-2 text-sm text-white/70">
-         <span class="text-lg">🏢</span>
+         <span class="text-lg">🌾</span>
          <span>Farmers and consumers get immutable traceability</span>
         </div>
         <div class="flex items-center gap-2 text-sm text-white/70">
