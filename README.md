@@ -1,8 +1,6 @@
 # Nevil Wandera Portfolio
 
-A modern, responsive portfolio website built with Vite, Tailwind CSS, and Lucide icons. Showcases software development and data science expertise with a clean SaaS-inspired design.
-
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -50,20 +48,7 @@ The built files will be in the `dist/` folder. You can preview the production bu
 npm run preview
 ```
 
-## 🛠️ Project Structure
-
-```
-nevil-portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # Custom CSS styles
-├── config.js           # Tailwind configuration
-├── package.json        # Project dependencies and scripts
-├── vite.config.js      # Vite configuration
-└── .vscode/
-    └── launch.json     # VS Code debug configuration
-```
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "npm is not recognized"
 If you get this error, Node.js isn't in your system PATH:
@@ -88,66 +73,6 @@ server: {
   port: 3000  // or any other available port
 }
 ```
-
-### Icons not showing
-The project uses inline SVG icons, so they should work without external dependencies. If icons are missing, check that the SVG code is intact in `index.html`.
-
-## 🎨 Customization
-
-### Colors and Styling
-- Main colors are defined in `styles.css`
-- Tailwind classes are used throughout for responsive design
-- Dark theme with blue/green accent colors
-
-### Content Updates
-- Personal info: Update the hero section in `index.html`
-- Projects: Modify the projects section
-- Contact details: Update email, phone, and social links
-- Skills: Edit the skills grid
-
-### Adding New Sections
-1. Add HTML structure in `index.html`
-2. Style with Tailwind classes or custom CSS in `styles.css`
-3. Test responsiveness on different screen sizes
-
-## 📱 Features
-
-- ✅ Responsive design (mobile-first)
-- ✅ Dark theme with glassmorphism effects
-- ✅ Smooth animations and transitions
-- ✅ Contact form (frontend only)
-- ✅ SEO optimized with meta tags
-- ✅ Accessibility features (ARIA labels, keyboard navigation)
-- ✅ Fast loading with Vite bundler
-
-## 🛠️ Tech Stack
-
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide (inline SVG)
-- **Build Tool:** Vite
-- **Deployment:** Static hosting (Netlify, Vercel, GitHub Pages)
-
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📞 Support
-
-For questions or issues:
-- Email: villeowan@gmail.com
-- Phone: +254 740 161 633
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
-
----
-
-Built with ❤️ by Nevil Wandera
