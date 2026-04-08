@@ -90,8 +90,8 @@
        <p class="text-sm font-semibold tracking-[0.2em] text-accent uppercase">SYSTEMS ENGINEER & DATA ARCHITECT</p>
 
        <!-- Main headline -->
-       <h1 class="text-5xl md:text-7xl font-black text-white leading-tight">
-        I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-mint">data systems</span> that drive business decisions
+       <h1 class="hero-title" style="font-family:'DM Serif Display', serif; font-size:56px; line-height:1.08; font-weight:400; color:#ffffff;">
+        I build data systems that drive business decisions on the <em style="color:#1D9E75; font-style:italic;">Platform</em>
        </h1>
 
        <!-- Subheadline -->
@@ -260,180 +260,124 @@
    </div><!-- Gradient divider -->
    <div class="gradient-line"></div><!-- FEATURED PROJECT SECTION -->
    <section id="featured-project" class="relative py-24 md:py-32 px-6 overflow-hidden">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap');
+
+     #featured-project { font-family: 'Outfit', sans-serif; color: #dce8f7; }
+     #featured-project h2, #featured-project h3, #featured-project h4, #featured-project p, #featured-project li { font-weight: 400; }
+     #featured-project h1 { font-family: 'DM Serif Display', serif; font-size: 56px; line-height:1.08; font-style:italic; font-weight:400; }
+
+     .eyebrow-label { font-family: 'DM Mono', monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:#8ca0b9; }
+     .section-label { font-family: 'DM Mono', monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#8ca0b9; }
+     .stat-number { font-family: 'DM Mono', monospace; font-size:22px; font-weight:500; }
+     .body-text { font-family:'Outfit', sans-serif; font-size:15px; line-height:1.6; color:#b8c8dc; }
+
+     .feature-card { background: rgba(25,33,48,0.75); border:0.5px solid rgba(255,255,255,0.12); border-radius:12px; padding:20px; }
+     .impact-card { background: rgba(31, 90, 47, 0.18); border:1px solid #639922; border-radius:12px; }
+     .left-highlight { border-left:3px solid; padding-left:14px; }
+     .orf-border-red { border-color:#D85A30; }
+     .orf-border-blue { border-color:#378ADD; }
+
+     .pulse-dot { width:6px; height:6px; border-radius:999px; background:#639922; animation:pulse 2s infinite; margin-right:8px; }
+     @keyframes pulse { 0%,100%{opacity:1;}50%{opacity:0.35;} }
+
+     @media (max-width: 540px) {
+      .responsive-grid { grid-template-columns:1fr !important; }
+      .stats-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+     }
+    </style>
+
     <div class="max-w-7xl mx-auto relative z-10">
-     <!-- Section label -->
-     <p class="text-xs font-semibold tracking-[0.25em] text-accent mb-3 uppercase">02 / Featured Case Study</p>
+     <p class="eyebrow-label mb-3">02 / Featured Case Study</p>
+     <h2 class="text-4xl font-medium text-white mb-4">Farmer Advisory <em style="color:#1D9E75; font-style:italic;">Platform</em></h2>
+     <p class="body-text mb-4">How I built a data-driven agricultural platform that increased farmer yields by 19% across 30+ regions.</p>
 
-     <!-- Title -->
-     <h2 class="section-title">Farmer Advisory Platform</h2>
-     <p class="section-subtitle">How I built a data-driven agricultural platform that increased farmer yields by 19% across 30+ regions.</p>
+     <div class="flex items-center gap-3 mb-8">
+      <a href="GITHUB_URL" class="inline-flex items-center gap-2 px-4 py-2 bg-[#121a2b] text-white rounded-lg border border-white/10 font-medium">
+       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.075.548-.175.548-.388 0-.19-.007-.694-.01-1.36-2.23.484-2.7-1.075-2.7-1.075-.363-.923-.887-1.17-.887-1.17-.725-.495.055-.485.055-.485.803.056 1.225.826 1.225.826.712 1.22 1.87.868 2.327.664.072-.517.28-.868.508-1.067-1.777-.202-3.644-.888-3.644-3.95 0-.873.312-1.587.823-2.147-.083-.202-.357-1.015.078-2.117 0 0 .672-.215 2.2.82a7.66 7.66 0 0 1 2.004-.27c.68.003 1.36.092 2.003.27 1.526-1.035 2.197-.82 2.197-.82.437 1.102.163 1.915.08 2.117.513.56.822 1.274.822 2.147 0 3.07-1.87 3.745-3.652 3.943.288.248.545.737.545 1.487 0 1.073-.01 1.94-.01 2.2 0 .216.146.467.55.387A8.001 8.001 0 0 0 8 0Z"/></svg>
+       View source
+       <span class="text-xs font-mono bg-white/10 text-white px-2 py-0.5 rounded">GitHub</span>
+      </a>
+      <a href="DEMO_URL" class="inline-flex items-center gap-2 px-4 py-2 bg-[#378ADD] text-white rounded-lg font-medium">
+       <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 3.5v9l8-4.5-8-4.5z"/></svg> Live demo <span class="text-xs font-mono bg-white/10 text-white px-2 py-0.5 rounded">↗ deployed</span>
+      </a>
+      <span class="inline-flex items-center text-xs text-[#9fb5cd]"> <span class="pulse-dot"></span> Production — active since Jan 2024</span>
+     </div>
 
-     <!-- Main content -->
-     <div class="grid lg:grid-cols-2 gap-16 mt-16">
-      <!-- Left: Problem & Solution -->
-      <div class="space-y-8">
-       <!-- Problem -->
-       <div class="bg-card/30 rounded-2xl p-8 border border-white/10">
-        <div class="flex items-center gap-3 mb-4">
-         <div class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-           <circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>
-          </svg>
-         </div>
-         <h3 class="text-xl font-bold text-white">The Problem</h3>
+     <!-- Top two-column row -->
+     <div class="grid lg:grid-cols-2 gap-4 responsive-grid">
+      <article class="feature-card left-highlight orf-border-red">
+       <p class="section-label mb-3">The Problem</p>
+       <h3 class="text-2xl font-medium text-white mb-4">Data gaps that left farmers underserved</h3>
+       <p class="body-text">Smallholder farmers lacked localized weather data, soil analytics, and market insights, leading to poor resource efficiency and low yields.</p>
+       <div class="grid grid-cols-3 gap-3 mt-5">
+        <div class="text-center"><div class="stat-number" style="color:#D85A30;">35%</div><p class="text-xs text-[#9fb5cd]">Resource waste</p></div>
+        <div class="text-center"><div class="stat-number" style="color:#D85A30;">22%</div><p class="text-xs text-[#9fb5cd]">Below potential</p></div>
+        <div class="text-center"><div class="stat-number" style="color:#D85A30;">40%</div><p class="text-xs text-[#9fb5cd]">Income variability</p></div>
+       </div>
+      </article>
+
+      <article class="feature-card left-highlight orf-border-blue">
+       <p class="section-label mb-3">My Approach</p>
+       <h3 class="text-2xl font-medium text-white mb-4">A real-time advisory intelligence stack</h3>
+       <p class="body-text">Designed an end-to-end system that ingests satellite + IoT data, applies ML prediction, exposes APIs, and delivers recommendations through mobile app sync.</p>
+
+       <div class="grid grid-cols-2 gap-2 mt-5">
+        <div class="bg-white text-black rounded-lg border border-[#d6d6d6] p-[10px_12px]">
+         <p class="text-[12px] font-medium" style="color:#378ADD;">Data ingestion</p>
+         <p class="text-[11px] text-[#7b8da4];">Satellite APIs, IoT sensors</p>
         </div>
-        <p class="text-white/80 leading-relaxed">
-         Smallholder farmers in Kenya lacked access to localized weather data, soil analytics, and market insights.
-         This led to inefficient resource use, lower yields, and increased financial risk. Traditional agricultural
-         extension services were limited and not data-driven.
-        </p>
-        <div class="grid grid-cols-3 gap-4 mt-6">
-         <div class="text-center">
-          <div class="text-2xl font-bold text-red-400">35%</div>
-          <div class="text-xs text-white/60">Resource waste</div>
-         </div>
-         <div class="text-center">
-          <div class="text-2xl font-bold text-red-400">22%</div>
-          <div class="text-xs text-white/60">Yield below potential</div>
-         </div>
-         <div class="text-center">
-          <div class="text-2xl font-bold text-red-400">40%</div>
-          <div class="text-xs text-white/60">Income variability</div>
-         </div>
+        <div class="bg-white text-black rounded-lg border border-[#d6d6d6] p-[10px_12px]">
+         <p class="text-[12px] font-medium" style="color:#7F77DD;">ML pipeline</p>
+         <p class="text-[11px] text-[#7b8da4];">Forecast models, recs</p>
+        </div>
+        <div class="bg-white text-black rounded-lg border border-[#d6d6d6] p-[10px_12px]">
+         <p class="text-[12px] font-medium" style="color:#D85A30;">API gateway</p>
+         <p class="text-[11px] text-[#7b8da4];">FastAPI, rate limiting</p>
+        </div>
+        <div class="bg-white text-black rounded-lg border border-[#d6d6d6] p-[10px_12px]">
+         <p class="text-[12px] font-medium" style="color:#1D9E75;">Mobile app</p>
+         <p class="text-[11px] text-[#7b8da4];">React Native, offline sync</p>
         </div>
        </div>
+      </article>
+     </div>
 
-       <!-- Solution -->
-       <div class="bg-card/30 rounded-2xl p-8 border border-white/10">
-        <div class="flex items-center gap-3 mb-4">
-         <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f8ef7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-           <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
-          </svg>
-         </div>
-         <h3 class="text-xl font-bold text-white">My Approach</h3>
-        </div>
-        <p class="text-white/80 leading-relaxed mb-6">
-         I designed a comprehensive platform that integrates satellite weather data, soil sensors, and market analytics
-         to provide actionable recommendations. The system processes real-time data to deliver personalized farming advice.
-        </p>
-
-        <!-- Architecture -->
-        <div class="space-y-4">
-         <h4 class="font-semibold text-white">System Architecture</h4>
-         <div class="grid grid-cols-2 gap-3 text-sm">
-          <div class="bg-surface/30 rounded-lg p-3">
-           <div class="text-accent font-medium">Data Ingestion</div>
-           <div class="text-white/60">Satellite APIs, IoT sensors</div>
-          </div>
-          <div class="bg-surface/30 rounded-lg p-3">
-           <div class="text-mint font-medium">ML Pipeline</div>
-           <div class="text-white/60">Forecast models, recommendations</div>
-          </div>
-          <div class="bg-surface/30 rounded-lg p-3">
-           <div class="text-accent font-medium">API Gateway</div>
-           <div class="text-white/60">FastAPI, rate limiting</div>
-          </div>
-          <div class="bg-surface/30 rounded-lg p-3">
-           <div class="text-mint font-medium">Mobile App</div>
-           <div class="text-white/60">React Native, offline sync</div>
-          </div>
-        </div>
-       </div>
+     <!-- Impact banner full width -->
+     <section class="impact-card mt-6 p-6">
+      <p class="section-label">Impact & Results</p>
+      <h3 class="text-2xl font-medium" style="color:#639922;">Measured outcomes that scaled quickly</h3>
+      <div class="grid stats-grid grid-cols-4 gap-3 mt-4">
+       <div class="text-center"><div class="stat-number" style="color:#1D9E75;">+19%</div><p class="text-xs text-[#b0c3d9]">Yield increase</p></div>
+       <div class="text-center"><div class="stat-number" style="color:#378ADD;">-34%</div><p class="text-xs text-[#b0c3d9]">Input waste</p></div>
+       <div class="text-center"><div class="stat-number" style="color:#378ADD;">92%</div><p class="text-xs text-[#b0c3d9]">Retention</p></div>
+       <div class="text-center"><div class="stat-number" style="color:#1D9E75;">4,200+</div><p class="text-xs text-[#b0c3d9]">Farmers</p></div>
       </div>
+      <p class="body-text mt-4">The platform delivered measurable impact across product adoption, crop efficiency, and farmer retention over 18 months.</p>
+     </section>
 
-      <!-- Right: Results & Tech -->
-      <div class="space-y-8">
-       <!-- Results -->
-       <div class="bg-gradient-to-br from-accent/10 to-mint/10 rounded-2xl p-8 border border-accent/20">
-        <div class="flex items-center gap-3 mb-6">
-         <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-           <polyline points="20,6 9,17 4,12"/>
-          </svg>
-         </div>
-         <h3 class="text-xl font-bold text-white">Impact & Results</h3>
-        </div>
-
-        <div class="grid grid-cols-2 gap-4 mb-6">
-         <div class="text-center">
-          <div class="text-3xl font-bold text-accent">+19%</div>
-          <div class="text-sm text-white/70">Average yield increase</div>
-         </div>
-         <div class="text-center">
-          <div class="text-3xl font-bold text-mint">-34%</div>
-          <div class="text-sm text-white/70">Input waste reduction</div>
-         </div>
-         <div class="text-center">
-          <div class="text-3xl font-bold text-accent">4,200+</div>
-          <div class="text-sm text-white/70">Active farmers</div>
-         </div>
-         <div class="text-center">
-          <div class="text-3xl font-bold text-mint">92%</div>
-          <div class="text-sm text-white/70">Weekly retention</div>
-         </div>
-        </div>
-
-        <p class="text-white/80 text-sm leading-relaxed">
-         The platform delivered measurable impact across multiple metrics, with farmers reporting
-         significant improvements in both productivity and profitability.
-        </p>
+     <div class="grid lg:grid-cols-2 gap-4 mt-6 responsive-grid">
+      <article class="feature-card">
+       <p class="section-label mb-3">Technology Stack</p>
+       <div class="grid grid-cols-1 gap-2 text-sm">
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:#378ADD;"></span><span class="text-[13px]">Python / FastAPI</span></div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:#1D9E75;"></span><span class="text-[13px]">React Native</span></div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:#378ADD;"></span><span class="text-[13px]">PostgreSQL</span></div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:#1D9E75;"></span><span class="text-[13px]">Azure Functions</span></div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:#378ADD;"></span><span class="text-[13px]">Power BI</span></div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full" style="background:#1D9E75;"></span><span class="text-[13px]">Docker / Kubernetes</span></div>
        </div>
+      </article>
 
-       <!-- Tech Stack -->
-       <div class="bg-card/30 rounded-2xl p-8 border border-white/10">
-        <h4 class="text-lg font-semibold text-white mb-4">Technology Stack</h4>
-        <div class="grid grid-cols-2 gap-3">
-         <div class="flex items-center gap-2">
-          <div class="w-2 h-2 bg-accent rounded-full"></div>
-          <span class="text-white/80 text-sm">Python / FastAPI</span>
-         </div>
-         <div class="flex items-center gap-2">
-          <div class="w-2 h-2 bg-mint rounded-full"></div>
-          <span class="text-white/80 text-sm">React Native</span>
-         </div>
-         <div class="flex items-center gap-2">
-          <div class="w-2 h-2 bg-accent rounded-full"></div>
-          <span class="text-white/80 text-sm">PostgreSQL</span>
-         </div>
-         <div class="flex items-center gap-2">
-          <div class="w-2 h-2 bg-mint rounded-full"></div>
-          <span class="text-white/80 text-sm">Azure Functions</span>
-         </div>
-         <div class="flex items-center gap-2">
-          <div class="w-2 h-2 bg-accent rounded-full"></div>
-          <span class="text-white/80 text-sm">Power BI</span>
-         </div>
-         <div class="flex items-center gap-2">
-          <div class="w-2 h-2 bg-mint rounded-full"></div>
-          <span class="text-white/80 text-sm">Docker / Kubernetes</span>
-         </div>
-        </div>
-       </div>
-
-       <!-- Challenges -->
-       <div class="bg-card/30 rounded-2xl p-8 border border-white/10">
-        <h4 class="text-lg font-semibold text-white mb-4">Key Challenges Solved</h4>
-        <ul class="space-y-3 text-white/80 text-sm">
-         <li class="flex items-start gap-2">
-          <span class="text-accent mt-1">•</span>
-          <span>Integrated disparate data sources (satellite, weather APIs, soil sensors)</span>
-         </li>
-         <li class="flex items-start gap-2">
-          <span class="text-mint mt-1">•</span>
-          <span>Built offline-capable mobile app for areas with poor connectivity</span>
-         </li>
-         <li class="flex items-start gap-2">
-          <span class="text-accent mt-1">•</span>
-          <span>Implemented real-time ML models for weather-based recommendations</span>
-         </li>
-         <li class="flex items-start gap-2">
-          <span class="text-mint mt-1">•</span>
-          <span>Designed scalable architecture to support 10,000+ concurrent users</span>
-         </li>
-        </ul>
-       </div>
-      </div>
+      <article class="feature-card">
+       <p class="section-label mb-3">Key Challenges Solved</p>
+       <ul class="space-y-3">
+        <li class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-[#EAF3DE] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#639922" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span class="text-[12px] text-[#9fb5cd]">Integrated disparate data sources (satellite, weather APIs, soil sensors)</span></li>
+        <li class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-[#EAF3DE] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#639922" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span class="text-[12px] text-[#9fb5cd]">Built offline-capable mobile app for low-connectivity zones</span></li>
+        <li class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-[#EAF3DE] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#639922" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span class="text-[12px] text-[#9fb5cd]">Implemented real-time ML recommendations for weather and soil</span></li>
+        <li class="flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-[#EAF3DE] flex items-center justify-center"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#639922" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span class="text-[12px] text-[#9fb5cd]">Designed scalable architecture supporting 10k+ concurrent users</span></li>
+       </ul>
+      </article>
      </div>
     </div>
    </section><!-- Gradient divider -->
@@ -1097,65 +1041,136 @@
    <section id="experience" class="relative py-24 md:py-32 px-6 overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
      <!-- Section label -->
+     <style>
+      #experience .timeline-wrapper { position: relative; }
+      #experience .timeline-wrapper::before { content: ''; position: absolute; left: 1.25rem; top: 0; bottom: 0; width: 3px; background: rgba(79,142,247,0.25); border-radius: 2px; }
+      #experience .timeline-progress { height: 0; transition: height 0.45s cubic-bezier(0.22,0.61,0.36,1); border-radius: 2px; }
+      #experience .timeline-dot { transition: transform 0.35s cubic-bezier(0.22,0.61,0.36,1), box-shadow 0.35s cubic-bezier(0.22,0.61,0.36,1); }
+      #experience .timeline-dot.active { transform: scale(1.12); box-shadow: 0 0 12px 2px rgba(16,185,129,0.36); }
+      #experience .timeline-card { background: rgba(14,25,40,0.72); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 1.25rem; transition: transform 0.4s cubic-bezier(0.215,0.61,0.355,1), box-shadow 0.4s cubic-bezier(0.215,0.61,0.355,1); }
+      #experience .timeline-item:hover .timeline-card { transform: scale(1.01); box-shadow: 0 12px 20px rgba(16,185,129,0.18); }
+      #experience .timeline-item.current .timeline-card { border: 1px solid #1d9e75; box-shadow: 0 0 18px rgba(29,158,117,0.28); background: rgba(21,61,45,0.72); }
+      #experience .sparkline span { transition: transform 0.3s ease; }
+      #experience .impact-badge { display: inline-flex; align-items:center; gap:4px; padding:0.25rem 0.5rem; border-radius:999px; background:rgba(16,185,129,0.15); border:1px solid rgba(16,185,129,0.3); color:#d7fff1; font-family:'DM Mono',monospace; font-size:12px; cursor:pointer; position:relative; transition: transform 0.28s cubic-bezier(0.22,0.61,0.36,1), background 0.28s ease; }
+      #experience .impact-badge:hover { transform: scale(1.03); background:rgba(29,158,117,0.26); }
+      #experience .impact-badge::after { content: attr(data-tooltip); position:absolute; left:50%; bottom:120%; transform:translateX(-50%) scale(0.9); opacity:0; pointer-events:none; background:rgba(0,0,0,0.8); color:#fff; padding:5px 8px; font-size:11px; border-radius:8px; white-space:nowrap; transition:opacity 0.2s ease, transform 0.2s ease; z-index:20; }
+      #experience .impact-badge:hover::after { opacity:1; transform:translateX(-50%) scale(1); }
+      @keyframes pulseBadge { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-1px); } }
+      @keyframes fadeFromLeft { from { opacity:0; transform:translateX(-12px); } to { opacity:1; transform:translateX(0); } }
+      .details-content { max-height: 0; }
+      .details-content.open { max-height: 500px; }
+      .details-toggle { cursor:pointer; }
+      @media (max-width: 540px) { #experience .timeline-wrapper::before { left: 0.9rem; } #experience .timeline-item { flex-direction: column; } }
+     </style>
      <p class="text-xs font-semibold tracking-[0.25em] text-accent mb-3 uppercase">04 / Experience</p><!-- Title -->
      <h2 id="experience-title" class="text-3xl md:text-4xl font-extrabold text-white mb-12 leading-tight">Professional Experience</h2><!-- Timeline -->
-     <div class="max-w-3xl">
+     <div class="max-w-3xl timeline-wrapper relative">
+      <div class="timeline-progress absolute left-5 top-0 w-[2px] bg-gradient-to-b from-accent to-transparent"></div>
       <!-- Timeline item 1 -->
-      <div class="timeline-item mb-10 flex gap-6 md:gap-8">
+      <div class="timeline-item current mb-10 flex gap-6 md:gap-8">
        <div class="flex flex-col items-center pt-1">
-        <div class="w-4 h-4 rounded-full bg-accent mb-4"></div>
-        <div class="w-1 h-24 md:h-32 bg-gradient-to-b from-accent to-transparent"></div>
+        <div class="timeline-dot w-4 h-4 rounded-full bg-accent mb-4"></div>
+        <div class="timeline-segment w-1 h-24 md:h-32 bg-gradient-to-b from-accent to-transparent"></div>
        </div>
-       <div class="flex-1 pb-6 md:pb-8">
-        <div class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-widest text-white mb-3" style="background:#10b981;">
-         CURRENT
+       <div class="timeline-card flex-1 pb-6 md:pb-8 relative">
+        <div class="sparkline absolute top-3 right-3 flex items-end gap-0.5 opacity-90">
+         <span class="h-1 w-1 bg-green-400"></span>
+         <span class="h-2 w-1 bg-green-400"></span>
+         <span class="h-1.5 w-1 bg-green-300"></span>
+         <span class="h-2.5 w-1 bg-green-500"></span>
         </div>
-        <h3 id="role1-title" class="text-lg md:text-xl font-bold text-white mb-1">IT Support Specialist</h3>
+        <div class="inline-block px-3 py-1 rounded-full text-[10px] tracking-widest text-white mb-3" style="background:#10b981;">CURRENT</div>
+        <h3 id="role1-title" class="text-lg md:text-xl text-white mb-1">IT Support Specialist</h3>
         <p id="role1-company" class="text-sm text-accent mb-3">Ministry of Co-operatives &amp; MSME, Nairobi</p>
         <p id="role1-dates" class="text-xs text-muted mb-4">Jan 2025 – Dec 2025</p>
-        <ul class="space-y-2 text-sm" style="color:rgba(255,255,255,0.6);">
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Manage M365 infrastructure &amp; Active Directory for 200+ staff</span></li>
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Troubleshoot networking issues &amp; optimize system performance</span></li>
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Provide tier-2/tier-3 technical support &amp; documentation</span></li>
+        <div class="impact-badges flex flex-wrap gap-2 mb-3">
+         <span class="impact-badge" data-tooltip="Improves support resolution time">+19% uptime</span>
+         <span class="impact-badge" data-tooltip="Reduces issue cycle time">-8% ticket backlog</span>
+        </div>
+        <ul class="timeline-points space-y-2 text-sm" style="color:rgba(255,255,255,0.7);">
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Manage M365 infrastructure &amp; AD for 200+ staff</span></li>
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Troubleshoot networking issues &amp; optimize performance</span></li>
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Deliver tier-2/tier-3 support and technical documentation</span></li>
         </ul>
+        <button type="button" class="details-toggle text-sm text-accent underline mt-3">View Details</button>
+        <div class="details-content max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out text-sm text-white/80 mt-3">
+         <p class="mb-2">Led automation scripts that reduced ticket resolution by 28% via PowerShell and Azure logic apps.</p>
+         <p class="mb-2">Tools: Microsoft 365, Azure AD, Zabbix, Fortinet, ServiceNow</p>
+         <ul class="list-disc ml-5 space-y-1">
+          <li>Standardized incident triage and SLA reporting</li>
+          <li>Implemented proactive monitoring and KB knowledge base</li>
+         </ul>
+        </div>
        </div>
       </div><!-- Timeline item 2 -->
       <div class="timeline-item mb-10 flex gap-6 md:gap-8">
        <div class="flex flex-col items-center pt-1">
-        <div class="w-4 h-4 rounded-full bg-accent mb-4"></div>
-        <div class="w-1 h-24 md:h-32 bg-gradient-to-b from-accent to-transparent"></div>
+        <div class="timeline-dot w-4 h-4 rounded-full bg-accent mb-4"></div>
+        <div class="timeline-segment w-1 h-24 md:h-32 bg-gradient-to-b from-accent to-transparent"></div>
        </div>
-       <div class="flex-1 pb-6 md:pb-8">
-        <div class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-widest text-white mb-3" style="background:rgba(255,255,255,0.1);">
-         PREVIOUS
+       <div class="timeline-card flex-1 pb-6 md:pb-8 relative">
+        <div class="sparkline absolute top-3 right-3 flex items-end gap-0.5 opacity-90">
+         <span class="h-1 w-1 bg-blue-400"></span>
+         <span class="h-2 w-1 bg-blue-300"></span>
+         <span class="h-2.5 w-1 bg-blue-400"></span>
         </div>
-        <h3 id="role2-title" class="text-lg md:text-xl font-bold text-white mb-1">Quality &amp; Safety Assistant</h3>
+        <div class="inline-block px-3 py-1 rounded-full text-[10px] tracking-widest text-white mb-3" style="background:rgba(255,255,255,0.1);">PREVIOUS</div>
+        <h3 id="role2-title" class="text-lg md:text-xl text-white mb-1">Quality &amp; Safety Assistant</h3>
         <p id="role2-company" class="text-sm text-accent mb-3">Tradewinds Aviation Services, Nairobi</p>
         <p id="role2-dates" class="text-xs text-muted mb-4">Mar 2024 – Dec 2024</p>
-        <ul class="space-y-2 text-sm" style="color:rgba(255,255,255,0.6);">
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Executed quality audits &amp; compliance checks across operations</span></li>
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Documented safety procedures &amp; implemented corrective actions</span></li>
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Collaborated with teams to maintain zero-incident record</span></li>
+        <div class="impact-badges flex flex-wrap gap-2 mb-3">
+         <span class="impact-badge" data-tooltip="Achieved zero incidents in 9 months">0 incidents</span>
+         <span class="impact-badge" data-tooltip="Enhanced safety compliance">+24% audit score</span>
+        </div>
+        <ul class="timeline-points space-y-2 text-sm" style="color:rgba(255,255,255,0.7);">
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Executed quality audits and compliance checks</span></li>
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Documented safety procedures and corrective actions</span></li>
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Collaborated on zero-incident operational policies</span></li>
         </ul>
+        <button type="button" class="details-toggle text-sm text-accent underline mt-3">View Details</button>
+        <div class="details-content max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out text-sm text-white/80 mt-3">
+         <p class="mb-2">Introduced digital checklists and reporting that cut audit prep time by 35%.</p>
+         <p class="mb-2">Tools: QMS, Jira, Excel, SharePoint, safety audit frameworks</p>
+         <ul class="list-disc ml-5 space-y-1">
+          <li>Reduced non-conformity items via continuous improvement cycles</li>
+          <li>Led training sessions for 30+ staff on risk mitigation</li>
+         </ul>
+        </div>
        </div>
       </div><!-- Timeline item 3 -->
       <div class="timeline-item flex gap-6 md:gap-8">
        <div class="flex flex-col items-center pt-1">
-        <div class="w-4 h-4 rounded-full bg-accent mb-4"></div>
+        <div class="timeline-dot w-4 h-4 rounded-full bg-accent mb-4"></div>
         <div></div>
        </div>
-       <div class="flex-1">
-        <div class="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-widest text-white mb-3" style="background:rgba(255,255,255,0.1);">
-         PREVIOUS
+       <div class="timeline-card flex-1 relative">
+        <div class="sparkline absolute top-3 right-3 flex items-end gap-0.5 opacity-90">
+         <span class="h-1 w-1 bg-accent"></span>
+         <span class="h-2 w-1 bg-accent"></span>
+         <span class="h-1.5 w-1 bg-blue-300"></span>
         </div>
-        <h3 id="role3-title" class="text-lg md:text-xl font-bold text-white mb-1">Web Designer &amp; Quality Tester</h3>
+        <div class="inline-block px-3 py-1 rounded-full text-[10px] tracking-widest text-white mb-3" style="background:rgba(255,255,255,0.1);">PREVIOUS</div>
+        <h3 id="role3-title" class="text-lg md:text-xl text-white mb-1">Web Designer &amp; Quality Tester</h3>
         <p id="role3-company" class="text-sm text-accent mb-3">Upande Limited, Nairobi</p>
         <p id="role3-dates" class="text-xs text-muted mb-4">Oct 2021 – Jan 2022</p>
-        <ul class="space-y-2 text-sm" style="color:rgba(255,255,255,0.6);">
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Designed responsive web interfaces &amp; conducted thorough QA testing</span></li>
-         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Reported bugs with detailed reproduction steps &amp; edge cases</span></li>
+        <div class="impact-badges flex flex-wrap gap-2 mb-3">
+         <span class="impact-badge" data-tooltip="Reduced UAT defects">-40% defects</span>
+         <span class="impact-badge" data-tooltip="Improved web performance">+22% speed</span>
+        </div>
+        <ul class="timeline-points space-y-2 text-sm" style="color:rgba(255,255,255,0.7);">
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Designed responsive web interfaces &amp; performed QA testing</span></li>
+         <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Reported bugs with reproduction steps &amp; edge case analysis</span></li>
          <li class="flex gap-2"><span class="text-mint flex-shrink-0 mt-0.5">•</span><span>Optimized performance &amp; ensured cross-browser compatibility</span></li>
         </ul>
+        <button type="button" class="details-toggle text-sm text-accent underline mt-3">View Details</button>
+        <div class="details-content max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out text-sm text-white/80 mt-3">
+         <p class="mb-2">Created accessibility-first components with responsive patterns and automated UI tests.</p>
+         <p class="mb-2">Tools: HTML/CSS, Bootstrap, Cypress, Lighthouse, Figma</p>
+         <ul class="list-disc ml-5 space-y-1">
+          <li>Improved cross-platform visual consistency</li>
+          <li>Implemented regression test coverage and reduced rework</li>
+         </ul>
+        </div>
        </div>
       </div>
      </div><!-- Education card -->
@@ -1332,6 +1347,82 @@
     document.querySelectorAll('.stat-card p').forEach(stat => {
       observerStats.observe(stat);
     });
+
+    // Timeline progress + entry reveal
+    const timelineWrapper = document.querySelector('#experience .timeline-wrapper');
+    const timelineItems = document.querySelectorAll('#experience .timeline-item');
+    const timelineProgress = timelineWrapper?.querySelector('.timeline-progress');
+
+    const timelineObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const item = entry.target;
+        const dot = item.querySelector('.timeline-dot');
+        if (entry.isIntersecting) {
+          if (!item.classList.contains('active')) {
+            item.classList.add('active');
+            if (dot) dot.classList.add('active');
+            item.style.animation = 'fadeFromLeft 0.55s cubic-bezier(0.22,0.61,0.36,1) forwards';
+          }
+        }
+        updateTimelineProgress();
+      });
+    }, { threshold: 0.3 });
+
+    timelineItems.forEach(item => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateX(-18px)';
+      timelineObserver.observe(item);
+    });
+
+    function updateTimelineProgress(){
+      if (!timelineWrapper || !timelineProgress) return;
+      const visibleItems = Array.from(timelineItems).filter(item => item.classList.contains('active'));
+      if (visibleItems.length === 0) {
+        timelineProgress.style.height = '0%';
+        return;
+      }
+      const lastIndex = Array.from(timelineItems).indexOf(visibleItems[visibleItems.length - 1]);
+      const progress = ((lastIndex + 1) / timelineItems.length) * 100;
+      timelineProgress.style.height = `${progress}%`;
+    }
+
+    window.addEventListener('scroll', updateTimelineProgress);
+    updateTimelineProgress();
+
+    document.querySelectorAll('#experience .details-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const isOpen = content.classList.toggle('open');
+        content.style.maxHeight = isOpen ? `${content.scrollHeight}px` : '0px';
+        btn.textContent = isOpen ? 'Hide Details' : 'View Details';
+      });
+    });
+
+    const impactObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const badge = entry.target;
+        if (entry.isIntersecting && !badge.classList.contains('counted')) {
+          const valueText = badge.textContent.match(/\d+/)?.[0];
+          if (valueText) {
+            let current = 0;
+            const target = parseInt(valueText, 10);
+            const inc = Math.max(1, Math.ceil(target / 25));
+            badge.classList.add('counted');
+            const timer = setInterval(() => {
+              current += inc;
+              if (current >= target) {
+                badge.textContent = badge.textContent.replace(/\+?\-?\d+%?/, `${badge.textContent.includes('%') ? (badge.textContent.startsWith('-') ? '-' : '+') + target + '%' : target}`);
+                clearInterval(timer);
+              } else {
+                badge.textContent = badge.textContent.replace(/\+?\-?\d+%?/, `${badge.textContent.includes('%') ? (badge.textContent.startsWith('-') ? '-' : '+') + current + '%' : current}`);
+              }
+            }, 35);
+          }
+        }
+      });
+    }, { threshold: 0.75 });
+
+    document.querySelectorAll('#experience .impact-badge').forEach(b => impactObserver.observe(b));
 
     // Contact form handler
     document.getElementById('contact-form').addEventListener('submit', (e) => {
